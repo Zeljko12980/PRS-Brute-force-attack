@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/CudaBruteForce/CudaBruteForce/x64/Debug
+/CudaBruteForce/.vs/CudaBruteForce/v17/ipch/AutoPCH
+/CudaBruteForce/x64/Debug
+/CudaBruteForce/.vs/CudaBruteForce/v17/Browse.VC.db
+/CudaBruteForce/.vs/CudaBruteForce/v17/Browse.VC.db-shm
+/CudaBruteForce/.vs/CudaBruteForce/v17/Browse.VC.db-wal
+/CudaBruteForce/.vs/CudaBruteForce
