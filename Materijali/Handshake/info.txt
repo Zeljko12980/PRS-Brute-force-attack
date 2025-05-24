@@ -1,0 +1,64 @@
+hcxpcapngtool 6.3.5 reading from novi-handshake-02.cap...
+
+summary capture file
+--------------------
+file name................................: novi-handshake-02.cap
+version (pcap/cap).......................: 2.4 (very basic format without any additional information)
+timestamp minimum (timestamp)............: 24.05.2025 18:37:16 (1748111836)
+timestamp maximum (timestamp)............: 24.05.2025 18:39:36 (1748111976)
+duration of the dump tool (minutes)......: 2
+used capture interfaces..................: 1
+link layer header type...................: DLT_IEEE802_11 (105) very basic format without any additional information about the quality
+endianness (capture system)..............: little endian
+packets inside...........................: 110735
+ESSID (total unique).....................: 1
+BEACON (total)...........................: 1
+BEACON on 2.4 GHz channel (from IE_TAG)..: 1 
+ACTION (total)...........................: 8
+PROBEREQUEST (directed)..................: 2
+PROBERESPONSE (total)....................: 106
+DEAUTHENTICATION (total).................: 2560
+AUTHENTICATION (total)...................: 5
+AUTHENTICATION (OPEN SYSTEM).............: 5
+ASSOCIATIONREQUEST (total)...............: 1
+ASSOCIATIONREQUEST (PSK).................: 1
+WPA encrypted............................: 63659
+EAPOL messages (total)...................: 12
+EAPOL RSN messages.......................: 12
+EAPOLTIME gap (measured maximum msec)....: 88077
+EAPOL ANONCE error corrections (NC)......: working
+REPLAYCOUNT gap (suggested NC)...........: 5
+EAPOL M1 messages (total)................: 7
+EAPOL M2 messages (total)................: 1
+EAPOL M3 messages (total)................: 2
+EAPOL M4 messages (total)................: 2
+EAPOL M4 messages (zeroed NONCE).........: 2
+EAPOL pairs (total)......................: 2
+EAPOL pairs (useful).....................: 2
+EAPOL pairs written to 22000 hash file...: 2 (RC checked)
+EAPOL M32E2 (authorized).................: 1
+EAPOL M32E3 (authorized).................: 1
+
+Information: limited dump file format detected!
+This file format is a very basic format to save captured network data.
+It is recommended to use PCAP Next Generation dump file format (or pcapng for short) instead. The PCAP Next Generation dump file format is an attempt to overcome the limitations of the currently widely used (but very limited) libpcap (cap, pcap) format.
+https://www.wireshark.org/docs/wsug_html_chunked/AppFiles.html#ChAppFilesCaptureFilesSection
+https://github.com/pcapng/pcapng
+
+Information: radiotap header is missing!
+Radiotap is a de facto standard for 802.11 frame injection and reception. The radiotap header format is a mechanism to supply additional information about frames, from the driver to userspace applications.
+https://www.radiotap.org/
+
+Warning: too many deauthentication/disassociation frames detected!
+That can cause that an ACCESS POINT change channel, reset EAPOL TIMER, renew ANONCE and set PMKID to zero. This could prevent to calculate a valid EAPOL MESSAGE PAIR, to get a valid PMKID or to decrypt the traffic.
+
+Information: missing frames!
+This dump file does not contain undirected proberequest frames.
+An undirected proberequest may contain information about the PSK. It always happens if the capture file was cleaned or it could happen if filter options are used during capturing.
+That makes it hard to recover the PSK.
+
+
+session summary
+---------------
+processed cap files...................: 1
+
